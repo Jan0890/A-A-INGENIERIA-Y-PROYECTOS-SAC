@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&A Ingeniería y Proyectos SAC - Productos</title>
+
+    <!-- Fuentes -->
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-background-dark dark:text-background-light">
+    <div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+        <div>
+            <!-- HEADER -->
+            <header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+                <button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-background-light dark:bg-background-dark/50 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" onclick="history.back()">
+                    <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+                    </svg>
+                </button>
+                <h1 class="text-lg font-bold leading-tight flex-1 text-center pr-10">Productos</h1>
+            </header>
+
+            <!-- MAIN CONTENT -->
+            <main class="p-4 space-y-6">
+                <!-- Barra de búsqueda -->
+                <div class="relative w-full">
+                    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                        <svg class="h-5 w-5 text-background-dark/50 dark:text-background-light/50" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                        </svg>
+                    </div>
+                    <input class="w-full rounded-full border-none bg-background-light/50 dark:bg-background-dark/50 py-3 pl-10 pr-4 text-base font-normal focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-background-dark/50 dark:placeholder:text-background-light/50"
+                        placeholder="Buscar productos" type="search" />
+                </div>
+
+                <!-- Filtros -->
+                <div class="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4">
+                    <button class="shrink-0 rounded-full bg-primary px-4 py-2 text-sm font-medium text-white">
+                        Residencial
+                    </button>
+                    <button class="shrink-0 rounded-full bg-background-light/80 dark:bg-background-dark/80 px-4 py-2 text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                        Industrial
+                    </button>
+                    <button class="shrink-0 rounded-full bg-background-light/80 dark:bg-background-dark/80 px-4 py-2 text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                        Comercial
+                    </button>
+                </div>
+
+                <h2 class="text-xl font-bold tracking-tight">Cercos de Concreto</h2>
+
+                <!-- Grid de productos -->
+                <div class="space-y-6">
+                    <!-- Producto 1 -->
+                    <article class="flex flex-col gap-4 rounded-xl bg-background-light/50 dark:bg-background-dark/50 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEuf-WW_-zv4Fp7OqTsCH0uvfYnyqUoWde5sXZdK3sqzSYRuIDlQkTJtOtni2qb77C2aFVwNW23l-y3KLAxNZvtdw7Uged5j5Gi8nGW0G_Dzpvqwxl2raf5TmgVSeemxHEqJYLR9JCqgap7Y2KypBO9gSgS7_w4hdf2kLz75ChiDRZm4r5LMR-Li7Rgdq-YV8agokY5FmaOV6wcDYWlHzm_lJvaLAbf9g8GlI9fKh8fRgNKUEAfMylsOMDBxd47R88sFC-Cf3t6AM");'></div>
+                        <div class="p-4 pt-0">
+                            <h3 class="text-lg font-bold">Cerco Residencial</h3>
+                            <p class="text-sm text-background-dark/70 dark:text-background-light/70 mt-1">Cercos de concreto prefabricados para residencias, con diseños modernos y alta durabilidad.</p>
+                            <p class="text-base font-semibold text-primary mt-2">Desde S/ 150/m</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="flex flex-col gap-4 rounded-xl bg-background-light/50 dark:bg-background-dark/50 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNJ6E5zm6rkv2ZD253i_ByjpLxWpGQ9TtRsk5-rxdI5Z9IPg9QOnMwtosL_BI_UkOFu1Wh60_CwmtGDzP7DZZMfZuIROTNiEXcrvOOuxvhfMw2iRkiUZf5FxiHndo44cD9Sa0wVoHZFttrwikPxDYLZkGy18EwVipaJ8LO-LbILQgoiYncbBEybQNIHMcaGrz2OJawnj-SJHcFDtpgSv-JNAbJPjgzdzL7yH0tTQXQ5QBEptalFKOUaG3dN2nhYCAuJf9X5PCWsQI");'></div>
+                        <div class="p-4 pt-0">
+                            <h3 class="text-lg font-bold">Cerco Industrial</h3>
+                            <p class="text-sm text-background-dark/70 dark:text-background-light/70 mt-1">Cercos de concreto reforzado para industrias, ofreciendo máxima seguridad y resistencia.</p>
+                            <p class="text-base font-semibold text-primary mt-2">Desde S/ 200/m</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="flex flex-col gap-4 rounded-xl bg-background-light/50 dark:bg-background-dark/50 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCF6UnufXoH83aOh52GGxKdYvKRiRKt86X94I0CPGWCxGe0e-apsCNSmwaJBHRhN2Uh7vuxPTwRNlriUK8ky_crX6g55levBOD0GLN3STls3HZ5YIIlzB-bN51l37j1hwWCrRN0KAalwaTcuQwSaN0wa7BTYA3Jp5NIlo-RVTu7TICLyB2ioQQTFp0WgZS_hULhyeK489OdQzdupkz8HlJvuOdGeOHX4TQuc8X7SyWIc7CYv5vm_dYMe--gB5oFxNebw71EZz4pHb8");'></div>
+                        <div class="p-4 pt-0">
+                            <h3 class="text-lg font-bold">Cerco Comercial</h3>
+                            <p class="text-sm text-background-dark/70 dark:text-background-light/70 mt-1">Cercos de concreto personalizados para comercios, combinando estética y protección.</p>
+                            <p class="text-base font-semibold text-primary mt-2">Desde S/ 180/m</p>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+
+
+        <body class="bg-background-light dark:bg-background-dark font-display">
+            <div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+                <div>
+                    <!-- HEADER -->
+                    <header class="sticky top-0 z-10 flex items-center border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 p-4 backdrop-blur-sm">
+                        <button class="text-content-light dark:text-content-dark" onclick="history.back()">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                        <h1 class="flex-1 text-center text-lg font-bold text-content-light dark:text-content-dark tracking-tight pr-8">
+                            FAQ
+                        </h1>
+                    </header>
+
+                    <!-- MAIN CONTENT -->
+                    <main class="p-4 sm:p-6">
+                        <h2 class="text-2xl font-bold text-content-light dark:text-content-dark mb-6">Preguntas Frecuentes</h2>
+
+                        <div class="space-y-4">
+                            <!-- Pregunta 1 -->
+                            <details class="group rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark/50 transition-all duration-300" open>
+                                <summary class="flex cursor-pointer list-none items-center justify-between p-4">
+                                    <h3 class="text-base font-medium text-content-light dark:text-content-dark">
+                                        ¿Qué tipos de cercos de concreto ofrecen?
+                                    </h3>
+                                    <div class="text-content-light dark:text-content-dark transition-transform duration-300 group-open:rotate-180">
+                                        <span class="material-symbols-outlined">expand_more</span>
+                                    </div>
+                                </summary>
+                                <div class="px-4 pb-4 text-sm text-subtle-light dark:text-subtle-dark">
+                                    <p>Ofrecemos una variedad de cercos de concreto prefabricados, incluyendo paneles lisos, texturizados, y con diseños personalizados. También ofrecemos cercos de concreto armado para proyectos que requieren mayor resistencia
+                                        y durabilidad.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <!-- Pregunta 2 -->
+                            <details class="group rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark/50 transition-all duration-300">
+                                <summary class="flex cursor-pointer list-none items-center justify-between p-4">
+                                    <h3 class="text-base font-medium text-content-light dark:text-content-dark">
+                                        ¿Cuál es el proceso de instalación?
+                                    </h3>
+                                    <div class="text-content-light dark:text-content-dark transition-transform duration-300 group-open:rotate-180">
+                                        <span class="material-symbols-outlined">expand_more</span>
+                                    </div>
+                                </summary>
+                                <div class="px-4 pb-4 text-sm text-subtle-light dark:text-subtle-dark">
+                                    <p>Nuestro proceso de instalación es rápido y eficiente. Comienza con una evaluación del sitio, seguido de la preparación del terreno, la colocación de postes y finalmente el montaje de los paneles de concreto. Nos aseguramos
+                                        de que cada instalación cumpla con los más altos estándares de calidad y seguridad.</p>
+                                </div>
+                            </details>
+
+                            <!-- Pregunta 3 -->
+                            <details class="group rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark/50 transition-all duration-300">
+                                <summary class="flex cursor-pointer list-none items-center justify-between p-4">
+                                    <h3 class="text-base font-medium text-content-light dark:text-content-dark">
+                                        ¿Cuánto tiempo tarda la entrega e instalación?
+                                    </h3>
+                                    <div class="text-content-light dark:text-content-dark transition-transform duration-300 group-open:rotate-180">
+                                        <span class="material-symbols-outlined">expand_more</span>
+                                    </div>
+                                </summary>
+                                <div class="px-4 pb-4 text-sm text-subtle-light dark:text-subtle-dark">
+                                    <p>El tiempo de entrega e instalación varía según la magnitud y complejidad del proyecto. Sin embargo, gracias a nuestros procesos optimizados, podemos completar la mayoría de los proyectos residenciales en un plazo de
+                                        1 a 2 semanas desde la confirmación del pedido.</p>
+                                </div>
+                            </details>
+
+                            <!-- Pregunta 4 -->
+                            <details class="group rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark/50 transition-all duration-300">
+                                <summary class="flex cursor-pointer list-none items-center justify-between p-4">
+                                    <h3 class="text-base font-medium text-content-light dark:text-content-dark">
+                                        ¿Cómo puedo solicitar un presupuesto?
+                                    </h3>
+                                    <div class="text-content-light dark:text-content-dark transition-transform duration-300 group-open:rotate-180">
+                                        <span class="material-symbols-outlined">expand_more</span>
+                                    </div>
+                                </summary>
+                                <div class="px-4 pb-4 text-sm text-subtle-light dark:text-subtle-dark">
+                                    <p>Puede solicitar un presupuesto gratuito contactándonos a través de nuestro formulario en línea, por correo electrónico o llamando a nuestros números de atención al cliente. Un especialista se pondrá en contacto con
+                                        usted para entender sus necesidades y proporcionarle una cotización detallada.</p>
+                                </div>
+                            </details>
+
+                            <!-- Pregunta 5 -->
+                            <details class="group rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark/50 transition-all duration-300">
+                                <summary class="flex cursor-pointer list-none items-center justify-between p-4">
+                                    <h3 class="text-base font-medium text-content-light dark:text-content-dark">
+                                        ¿Ofrecen garantía en sus productos y servicios?
+                                    </h3>
+                                    <div class="text-content-light dark:text-content-dark transition-transform duration-300 group-open:rotate-180">
+                                        <span class="material-symbols-outlined">expand_more</span>
+                                    </div>
+                                </summary>
+                                <div class="px-4 pb-4 text-sm text-subtle-light dark:text-subtle-dark">
+                                    <p>Sí, todos nuestros productos y servicios de instalación cuentan con una garantía integral. Estamos comprometidos con la calidad y la satisfacción del cliente, asegurando la durabilidad y resistencia de nuestros cercos
+                                        de concreto.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                    </main>
+                </div>
+
+                <!-- FLOATING WHATSAPP BUTTON -->
+                <footer class="fixed bottom-5 right-5 z-20">
+                    <button class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-xl transition hover:bg-opacity-90 floating-button">
+                <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path>
+                </svg>
+            </button>
+                </footer>
+            </div>
+            <!-- FOOTER NAVIGATION -->
+            <footer class="sticky bottom-0 z-10 border-t border-border-light dark:border-border-dark bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+                <nav class="flex justify-around p-2">
+                    <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-primary" href="index.html">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+                        <span class="text-xs font-medium">Inicio</span>
+                    </a>
+
+                    <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="productos.html">
+                        <span class="material-symbols-outlined">package_2</span>
+                        <span class="text-xs font-medium">Productos</span>
+                    </a>
+
+                    <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="galeria.html">
+                        <span class="material-symbols-outlined">construction</span>
+                        <span class="text-xs font-medium">Proyectos</span>
+                    </a>
+
+                    <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="nosotros.html">
+                        <span class="material-symbols-outlined">groups</span>
+                        <span class="text-xs font-medium">Nosotros</span>
+                    </a>
+
+                    <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="contacto.html">
+                        <span class="material-symbols-outlined">mail</span>
+                        <span class="text-xs font-medium">Contacto</span>
+                    </a>
+                </nav>
+            </footer>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/faq-accordion.js"></script>
+    </body>
+
+</html>

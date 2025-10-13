@@ -1,0 +1,50 @@
+/* ===================================
+   VARIABLES CSS - A&A Ingeniería
+   =================================== */
+
+ :root {
+    /* Colores principales */
+    --primary: #14b84b;
+    --primary-hover: #12a643;
+    /* Colores de fondo */
+    --background-light: #f6f8f6;
+    --background-dark: #112116;
+    /* Colores de texto */
+    --text-light: #111813;
+    --text-dark: #f6f8f6;
+    --content-light: #111813;
+    --content-dark: #e3e3e3;
+    /* Colores sutiles/secundarios */
+    --muted-light: #63886f;
+    --muted-dark: #a3b8aa;
+    --subtle-light: #63886f;
+    --subtle-dark: #a0b5a7;
+    /* Bordes */
+    --border-light: #dce5df;
+    --border-dark: #34493c;
+    /* Fuente */
+    --font-display: 'Work Sans', sans-serif;
+    /* Border radius */
+    --radius-default: 0.25rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-full: 9999px;
+    /* Sombras */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    /* Transiciones */
+    --transition-fast: 150ms ease-in-out;
+    --transition-normal: 300ms ease-in-out;
+    --transition-slow: 500ms ease-in-out;
+}
+
+
+/* Tema oscuro */
+
+.dark {
+    color-scheme: dark;
+}

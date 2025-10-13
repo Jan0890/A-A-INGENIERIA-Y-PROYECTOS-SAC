@@ -1,0 +1,233 @@
+/* ===================================
+   ESTILOS PERSONALIZADOS - A&A Ingeniería
+   =================================== */
+
+
+/* Reset y configuración base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-display);
+    min-height: max(884px, 100dvh);
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+.dark body {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+
+/* Scroll horizontal personalizado */
+
+.snap-mandatory {
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.snap-mandatory::-webkit-scrollbar {
+    display: none;
+}
+
+.snap-start {
+    scroll-snap-align: start;
+}
+
+
+/* Placeholders de formularios */
+
+.form-input::placeholder {
+    color: var(--muted-light);
+}
+
+.dark .form-input::placeholder {
+    color: var(--muted-dark);
+}
+
+
+/* Animaciones */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+/* Material Symbols configuración */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+
+/* Estilos para detalles/acordeón */
+
+details.group summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+details.group summary::-webkit-details-marker {
+    display: none;
+}
+
+details.group[open] summary .rotate-icon {
+    transform: rotate(180deg);
+}
+
+
+/* Backdrop blur para headers pegajosos */
+
+.backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* Transiciones suaves */
+
+.transition-colors {
+    transition: color var(--transition-fast);
+}
+
+.transition-transform {
+    transition: transform var(--transition-normal);
+}
+
+.transition-shadow {
+    transition: box-shadow var(--transition-normal);
+}
+
+
+/* Hover states */
+
+button:hover,
+a:hover {
+    transition: all var(--transition-fast);
+}
+
+
+/* Safe area para dispositivos con notch */
+
+.h-safe-area-bottom {
+    height: env(safe-area-inset-bottom, 0);
+}
+
+
+/* Estilos para imágenes responsivas */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Contenedor principal */
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+
+/* Botón flotante de WhatsApp */
+
+.floating-button {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 20;
+    box-shadow: var(--shadow-xl);
+}
+
+
+/* Overlay oscuro para imágenes de fondo */
+
+.image-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+
+
+/* Carrusell */
+
+.carousel {
+    position: relative;
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+    transition: opacity 0.5s;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

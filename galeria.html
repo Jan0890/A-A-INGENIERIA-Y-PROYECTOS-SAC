@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&A Ingeniería y Proyectos SAC - Proyectos</title>
+
+    <!-- Fuentes -->
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden">
+        <div>
+            <!-- HEADER -->
+            <header class="sticky top-0 z-10 flex items-center justify-between bg-background-light dark:bg-background-dark p-4 shadow-sm">
+                <button class="text-black dark:text-white" onclick="history.back()">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <h1 class="flex-1 text-center text-lg font-bold text-black dark:text-white pr-8">Proyectos</h1>
+            </header>
+
+            <!-- MAIN CONTENT -->
+            <main class="p-4">
+                <h2 class="text-2xl font-bold text-black dark:text-white mb-4">Proyectos Completados</h2>
+
+                <!-- Filtros -->
+                <div class="flex space-x-2 pb-4 overflow-x-auto">
+                    <button class="shrink-0 rounded-full bg-primary px-4 py-2 text-sm font-medium text-white">
+                        Residencial
+                    </button>
+                    <button class="shrink-0 rounded-full bg-primary/20 dark:bg-primary/30 px-4 py-2 text-sm font-medium text-black dark:text-white hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+                        Comercial
+                    </button>
+                    <button class="shrink-0 rounded-full bg-primary/20 dark:bg-primary/30 px-4 py-2 text-sm font-medium text-black dark:text-white hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+                        Industrial
+                    </button>
+                </div>
+
+                <!-- Grid de proyectos -->
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Proyecto 1 -->
+                    <article class="flex flex-col gap-3">
+                        <div class="w-full aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZ1vptHSZnO5_8KSVLrjfk33AT8iZzx-Hp7pL6zNiUqnB4s7q0X5Y32iiDRHUS0C-9OWjFE3rFL8o6CQ18WbmBAg3mAkH08TA2_wEasxb0yjfCiQ5EaRtAOGPbImqMt_s2UkOHMuJ-sy5tQnAFVhHBDS7ZvXWiiWAWQrAU_HN3k8K2GV0IDDur4HZLIXYAfik6-_DnnLpdA5Gx5DSDJuXstJl4khIfdVXtfyYgFLvP6pdv01SILenjzaZETU2LaKHbnTIV-55cYGE");'></div>
+                        <div>
+                            <p class="text-base font-bold text-black dark:text-white">Residencia Los Olivos</p>
+                            <p class="text-sm text-black/60 dark:text-white/60">Cercado perimetral de concreto</p>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="flex flex-col gap-3">
+                        <div class="w-full aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOKOnBCvnjGbebBHxyMFX6EEqRDQLLNZqNdeBqNqi9MlFNHc3cMY5crQ2uy6ItIqLA5VMosRTevOf8MTReVklEy4xZNGrWR2v_oVPArwMFaEocbMeq3mzjfvOLt8-KYEJMEA6Xrumo5QWTkKfzd-XokMvLpy4vKSjR91JPU0ZOVMRiQyTuuFKpgZICLra8kBUj_19a3L8Qiau7a-xm7ghPGbXJcBN_eedI6MPAlxUgctnL6dvPE6IFfPOp_W_HsurrIYjKSBoLwBU");'></div>
+                        <div>
+                            <p class="text-base font-bold text-black dark:text-white">Centro Comercial Miraflores</p>
+                            <p class="text-sm text-black/60 dark:text-white/60">Cercado de seguridad reforzado</p>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="flex flex-col gap-3">
+                        <div class="w-full aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBboJfctvPgLYAJUkPCW-Tu9F6WbETYJYi2wLdCN8QDVNBafA6r6LSnNM1lwogMpxK-mItuovCeg3zqBIerbXCrqSmbnCrhMhPWYJWrb3btsPsnTu7pbwDSnhSmTH4kfTXYMq4NNpOsYhIpONp3pY-Q5Z8h81N5KUKIJ2ABsT81UdBLylZVQLrw6PFht38gp8SQYa4a5r5-_iQ_BC2O9b6xT_PdVLw6ZQZ87iLRUN9W4S2aLpFdyaZO_5l3vgPDQlAXTDPfxJezy6k");'></div>
+                        <div>
+                            <p class="text-base font-bold text-black dark:text-white">Planta Industrial Callao</p>
+                            <p class="text-sm text-black/60 dark:text-white/60">Cercado industrial con altura especial</p>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+
+        <!-- FLOATING WHATSAPP BUTTON -->
+        <footer class="fixed bottom-5 right-5 z-20">
+            <button class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-xl transition hover:bg-opacity-90 floating-button">
+                <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path>
+                </svg>
+            </button>
+        </footer>
+    </div>
+
+    <!-- FOOTER NAVIGATION -->
+    <footer class="sticky bottom-0 z-10 border-t border-border-light dark:border-border-dark bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+        <nav class="flex justify-around p-2">
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-primary" href="index.html">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+                <span class="text-xs font-medium">Inicio</span>
+            </a>
+
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="productos.html">
+                <span class="material-symbols-outlined">package_2</span>
+                <span class="text-xs font-medium">Productos</span>
+            </a>
+
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="galeria.html">
+                <span class="material-symbols-outlined">construction</span>
+                <span class="text-xs font-medium">Proyectos</span>
+            </a>
+
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="nosotros.html">
+                <span class="material-symbols-outlined">groups</span>
+                <span class="text-xs font-medium">Nosotros</span>
+            </a>
+
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="contacto.html">
+                <span class="material-symbols-outlined">mail</span>
+                <span class="text-xs font-medium">Contacto</span>
+            </a>
+        </nav>
+    </footer>
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

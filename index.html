@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>A&A Ingeniería y Proyectos SAC</title>
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden">
+        <!-- HEADER -->
+        <header class="sticky top-0 z-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <div class="container mx-auto flex items-center justify-between p-4">
+                <h1 class="text-xl font-bold text-gray-900 dark:text-white">A&A Ingeniería y Proyectos SAC</h1>
+                <button class="rounded p-2 text-gray-900 dark:text-white">
+                    <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-[60vh] min-h-[320px] w-full">
+                <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApfhIn4BVUDI7TBSbztyC7xekA87A9yx9NW7BItYsla-Af8zCHrOQwNHUlIwoTvfBI6pgiTi8XeEokgEUhk2gjpaVUdggOHE2K9YyKURyvD8w1vnEAs8EOGgR9ctWLbhum9FdXqG23EWFZwQ-mHaCGKYCt3xJyRtu55BJzeYBFH2CtyoMOP6lB3zID4KUtdgPjFeGGS0ShVeWPWJZ4XcZkAv-aMYYe9_jFbLXSBXQ9ZiuKWbInQpQbCUlvsODkJk8QvHHsM4UgY3Q");'></div>
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="relative z-10 flex h-full flex-col items-center justify-center p-4 text-center text-white">
+                    <h2 class="text-4xl font-black uppercase tracking-tight">Construcción y Calidad</h2>
+                    <p class="mt-2 max-w-md text-lg font-light">Soluciones duraderas en cercos de concreto prefabricados, construccion en sistema drywall, venta e instalacion de piedra laja.</p>
+                </div>
+            </section>
+
+
+            <!-- Servicios Section -->
+            <section class="py-16 px-4">
+                <div class="container mx-auto">
+                    <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-white">Nuestros Servicios</h2>
+                    <p class="mx-auto mt-4 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-300">
+                        A&A Ingeniería y Proyectos SAC se especializa en la construcción y fabricación de cercos de concreto prefabricados.
+                    </p>
+                </div>
+            </section>
+            <div style="text-align: center;">
+                <span style="font-size:24px; font-weight:bold;">
+                  Trabajos mas Solicitados
+                </span>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="images/image1.png" alt="Ejemplo 1" class="active" class="active" alt="Trabajo 1">
+                    <img src="images/image2.png" alt="Trabajo 2">
+                    <img src="images/image3.png" alt="Trabajo 3">
+                    <img src="images/image4.png" alt="Trabajo 4">
+                    <img src="images/image5.png" alt="Trabajo 5">
+                    <img src="images/image6.png" alt="Trabajo 6">
+                    <img src="images/image7.png" alt="Trabajo ">
+                </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+
+
+
+
+        </main>
+
+        <!-- FLOATING WHATSAPP BUTTON -->
+        <footer class="fixed bottom-5 right-5 z-20">
+            <button class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-xl transition hover:bg-opacity-90 floating-button">
+                <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="https://wa.me/+51932588157?text=Hola,A&A Ingenieria y Proyectos SAC%20estoy%20interesado%20en%20comprar%20productos%20%20">
+                    <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path>
+                </svg>
+            </button>
+        </footer>
+    </div>
+
+
+    <!-- FOOTER NAVIGATION -->
+    <footer class="sticky bottom-0 z-10 border-t border-border-light dark:border-border-dark bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+        <nav class="flex justify-around p-2">
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-primary" href="index.html">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+                <span class="text-xs font-medium">Inicio</span>
+            </a>
+
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="productos.html">
+                <span class="material-symbols-outlined">package_2</span>
+                <span class="text-xs font-medium">Productos</span>
+            </a>
+
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="galeria.html">
+                <span class="material-symbols-outlined">construction</span>
+                <span class="text-xs font-medium">Proyectos</span>
+            </a>
+
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="nosotros.html">
+                <span class="material-symbols-outlined">groups</span>
+                <span class="text-xs font-medium">Nosotros</span>
+            </a>
+
+            <a class="flex flex-col items-center justify-center gap-1 w-full rounded-full py-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="contacto.html">
+                <span class="material-symbols-outlined">mail</span>
+                <span class="text-xs font-medium">Contacto</span>
+            </a>
+        </nav>
+    </footer>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/faq-accordion.js"></script>
+</body>
+
+</html>
