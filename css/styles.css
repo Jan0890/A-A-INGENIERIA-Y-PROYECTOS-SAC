@@ -197,9 +197,10 @@ img {
 
 .carousel {
     position: relative;
-    width: 600px;
+    width: 400px;
     margin: auto;
     overflow: hidden;
+    border-radius: 2cap;
 }
 
 .carousel-images img {
